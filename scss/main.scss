@@ -1,0 +1,96 @@
+@import 'base'; 
+
+// header start
+header{
+    margin: 25px 0; 
+
+    .brand{
+        width: 15%;
+        float: left; 
+        margin-top: 8px;
+
+        img{
+            width: 100%;
+        }
+    }
+    .main-menu{
+        width: 70%;
+        float: right; 
+
+        ul{
+            float: right;
+            li{
+                list-style: none;
+                float: left;
+                padding: 0 50px;
+
+                a{
+                    text-decoration: none; 
+                    font-size: 22px;
+                    font-weight: 500;
+                    color: $primary-color;
+                    text-transform: uppercase;
+                    transition: .4s ease;
+                }
+
+                a:hover{
+                    border-bottom: 3px solid $primary-color;
+                }
+            }
+            li:last-child{
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+// banner section
+.banner{
+    .banner-image{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+// newsletter section
+
+.newsletter{
+    padding: 70px 0;
+    background-color: $secondary-color; 
+
+    .newletter-content{
+        h1{
+            font-size: 40px; 
+            text-align: center;
+        }
+        form{ 
+            margin-top: 50px;
+
+            .form-group{ 
+            max-width: 380px;
+            margin: 0 auto;
+            border-bottom: 1px solid black;
+            position: relative;
+            overflow: hidden;
+
+                input[type="email"]{
+                    float: left;                
+                    margin-bottom: 8px;
+                    outline:none;
+                    border: none;
+                    font-family: $font-stack !important;
+                    font-size: 16px;
+                    background-color: transparent; 
+                    width: 100%;
+                }
+                .send-btn{
+                    position: absolute;
+                    right: 5px;
+                    cursor: pointer;
+                }
+        
+            }
+        }
+    }
+}

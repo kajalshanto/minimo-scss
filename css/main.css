@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+  color: #626262;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  margin: 25px 0;
+}
+
+header .brand {
+  width: 15%;
+  float: left;
+  margin-top: 8px;
+}
+
+header .brand img {
+  width: 100%;
+}
+
+header .main-menu {
+  width: 70%;
+  float: right;
+}
+
+header .main-menu ul {
+  float: right;
+}
+
+header .main-menu ul li {
+  list-style: none;
+  float: left;
+  padding: 0 50px;
+}
+
+header .main-menu ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+  color: #626262;
+  text-transform: uppercase;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+header .main-menu ul li a:hover {
+  border-bottom: 3px solid #626262;
+}
+
+header .main-menu ul li:last-child {
+  padding-right: 0;
+}
+
+.banner .banner-image img {
+  width: 100%;
+}
+
+.newsletter {
+  padding: 70px 0;
+  background-color: #f0f0f0;
+}
+
+.newsletter .newletter-content h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.newsletter .newletter-content form {
+  margin-top: 50px;
+}
+
+.newsletter .newletter-content form .form-group {
+  max-width: 380px;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+.newsletter .newletter-content form .form-group input[type="email"] {
+  float: left;
+  margin-bottom: 8px;
+  outline: none;
+  border: none;
+  font-family: "Playfair Display", serif !important;
+  font-size: 16px;
+  background-color: transparent;
+  width: 100%;
+}
+
+.newsletter .newletter-content form .form-group .send-btn {
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

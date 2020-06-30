@@ -1,0 +1,19 @@
+$font-stack: 'Playfair Display', serif; 
+$font-stack-secondary: 'Ubuntu', sans-serif;; 
+
+$primary-color: #626262;
+$secondary-color: #f0f0f0;
+$default-text-color: #000;
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: $font-stack; 
+    color: $primary-color;
+}
+
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+    overflow:hidden;
+}
