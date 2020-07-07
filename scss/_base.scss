@@ -10,10 +10,88 @@ body{
     padding: 0;
     font-family: $font-stack; 
     color: $primary-color;
+    box-sizing: border-box; 
 }
 
+a{
+    text-decoration: none;
+}
 .wrapper{
     width: 90%;
     margin: 0 auto;
-    overflow:hidden;
+    overflow: hidden;
+}
+
+.wrapper-sm{
+    width: 80%; 
+    margin: 0 auto;
+    overflow: hidden;
+    }
+
+%head-para{
+    font-family: $font-stack-secondary;
+    font-size: 18px;
+    font-weight: normal; 
+    text-transform: uppercase;
+}
+
+%para{
+    // font-family: $font-stack-secondary; 
+    font-weight: normal;  
+    line-height: 30px;
+    text-align: justify;
+}
+%heading-big{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.head-para{
+    @extend %head-para;
+}
+.heading-big{
+    @extend %heading-big;
+}
+.para{
+    @extend %para;
+}
+
+@mixin padding($top, $bottom){
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin float($float){ 
+    float: $float;
+}
+
+%single-blog{
+    width: 45%; 
+    float: left;
+    margin-bottom: 50px;
+}
+
+%button{
+    padding: 20px 35px;
+    color: #000;
+    border: 2px solid $primary-color; 
+}
+
+%li{
+    li{
+        list-style-type: none;
+        padding: 0 20px;
+        display: inline-block;
+        float: left;
+
+        p{ 
+            font-weight: 600;
+            color: black;
+
+            .fab{
+                color: $primary-color;
+            }
+        }
+    }
 }

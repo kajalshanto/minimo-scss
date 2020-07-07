@@ -56,7 +56,7 @@ header{
 // newsletter section
 
 .newsletter{
-    padding: 70px 0;
+    @include padding(80px, 100px);
     background-color: $secondary-color; 
 
     .newletter-content{
@@ -93,4 +93,90 @@ header{
             }
         }
     }
+}
+
+.description{
+    @include padding(60px, 60px);
+}
+
+.blog{
+    @include padding(60px, 60px);
+    .single-blog{
+        @extend %single-blog;
+
+        img{
+            width: 100%;
+        }
+    }
+    .single-blog:nth-child(odd){
+        padding-right: 10%;
+    }
+}
+
+.blog-2{
+    @include padding(100px, 60px);
+    .single-blog{
+        @extend %single-blog;
+
+        img{
+            width: 100%;
+        }
+    }
+    .single-blog:nth-child(odd){
+        padding-right: 10%;
+    } 
+
+}
+
+.load-btn{ 
+    @include padding(50px, 150px); 
+    .button-center{
+        text-align: center;
+        padding: 50px;
+
+        a.button{ 
+            font-size: 20px;
+            @extend %button;
+            transition: .4s;
+        }
+        a.button:hover{
+            background-color: black;
+            color: white;
+            border: none;
+        }
+    }     
+}
+
+footer {
+    background-color: lighten($primary-color, 50%);
+    .footer-main{ 
+        overflow: hidden;  
+
+        .footer-left{
+            width: 50%;
+            float: left;
+            ul{
+               padding-inline-start: 0;
+                @include float(left);
+                @extend %li;
+            }  
+            ul li:first-child{
+               padding-left: 0;
+            }          
+
+        }
+        .footer-right{
+            width: 40%;
+            float: right;
+            ul{
+                @include float(right);
+                @extend %li;
+            }
+            
+            ul li:last-child{
+               padding-right: 0;
+            }
+        }
+    }
+    
 }
